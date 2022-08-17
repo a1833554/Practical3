@@ -7,12 +7,14 @@
 #include <string>
 #include <iostream>
 
-int main(){
-    
 extern void string_2d_copy(std::string first[][2], std::string second[][2], int n) ;
  
-
-    std::string first[3][2] = {{"fish","dog"},{"mad","towl"},{"cat","frog"}};
+int main(){
+    
+    std::string first[3][2] = {
+        {"fish","dog"},
+        {"mad","towl"},
+        {"cat","frog"}};
     std::string second[3][2];
     
     string_2d_copy(first,second,3);
