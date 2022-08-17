@@ -25,6 +25,10 @@ extern void copy_integers(int old_array[],int new_array[],int length){
     
 */
     for (int i = 0; i<length; i++){
+        if(i == length-1){
+            std::cout<< *(newarr+i)<<std::endl;
+        }else{
         std::cout<< *(newarr+i)<< " ";
-    }std::cout<<std::endl;
+    }
+    }
 }
